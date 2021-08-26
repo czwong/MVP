@@ -112,7 +112,7 @@ const Map = (props) => {
     });
   };
 
-  const accessToken = process.env.API_KEY;
+  const accessToken = process.env.REACT_APP_API_KEY;
 
   console.log(process.env);
 
