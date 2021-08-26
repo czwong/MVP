@@ -112,8 +112,9 @@ const Map = (props) => {
     });
   };
 
-  const accessToken =
-    "pk.eyJ1IjoidGVuYWNpdHkxMDI4IiwiYSI6ImNqdjl1Nzg1eTA4ZmM0MW8wdXIzMXBrdzQifQ.3I_shCzx3QHtjO_2Ro7DIg";
+  const accessToken = process.env.API_KEY;
+
+  console.log(process.env);
 
   props.state.map
     ? props.state.map.on("overlayadd", () => showLegend(true))

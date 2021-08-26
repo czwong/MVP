@@ -1,18 +1,13 @@
 const express = require("express");
 const path = require("path");
-// const router = require("./router");
 
 const app = express();
-const port = 3000;
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "/../client/dist")));
-// app.use("/api", router);
 
-app.listen(port, (err) => {
-  if (err) {
-    console.log("Error starting server");
-  } else {
-    console.log("Server starting on port", port);
-  }
+app.set("port", process.env.PORT || 8080);
+
+var server = app.listen(app.get("port"), () => {
+  console.log("listening on port ", server.address().port);
 });
