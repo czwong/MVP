@@ -1,0 +1,4 @@
+node_modules
+client/dist/bundle.js
+**/.vscode/
+server/config/config.js
