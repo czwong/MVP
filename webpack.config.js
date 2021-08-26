@@ -1,4 +1,6 @@
 const path = require("path");
+const webpack = require("webpack");
+const dotenv = require("dotenv");
 
 const DIST_Path = path.join(__dirname, "client/dist");
 const SRC_Path = path.join(__dirname, "client/src");
@@ -35,4 +37,9 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      "process.env": JSON.stringify(dotenv.config().parsed),
+    }),
+  ],
 };

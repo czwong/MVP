@@ -114,8 +114,6 @@ const Map = (props) => {
 
   const accessToken = process.env.REACT_APP_API_KEY;
 
-  console.log(process.env);
-
   props.state.map
     ? props.state.map.on("overlayadd", () => showLegend(true))
     : null;
