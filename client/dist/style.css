@@ -34,8 +34,8 @@
 .census-info {
   display: flex;
   flex-direction: column;
-  top: 50%;
-  right: 5%;
+  top: 40%;
+  right: 1%;
   padding: 10px 10px;
   border-radius: 5px;
   color: white;
@@ -51,8 +51,8 @@
 }
 .census-info-hover {
   z-index: 999;
-  top: 50%;
-  right: 5%;
+  top: 40%;
+  right: 1%;
   height: 8%;
   width: 20%;
   padding: 10px 10px;
@@ -68,8 +68,8 @@
 .legend {
   position: absolute;
   z-index: 999;
-  right: 5%;
-  top: 75%;
+  right: 1%;
+  top: 65%;
   padding: 20px 10px;
   box-shadow: 0 0 5px 0 rgba(184, 140, 140, 0.3);
   font-size: 12px;
@@ -95,6 +95,11 @@
   width: 20px;
   height: 20px;
   margin-right: 5px;
+}
+
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
 }
 
 button {

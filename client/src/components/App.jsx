@@ -73,6 +73,7 @@ export default class App extends React.Component {
   selectState(state) {
     this.setState({
       currentState: state,
+      currentCounty: null,
     });
     const { map } = this.state;
     if (map) map.flyTo([37.09, -95.71], 4);
